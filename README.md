@@ -4,17 +4,17 @@ Proyecto ZARA CHALLENGE MARVEL con Next.js y TypeScript
 
 Este proyecto es una aplicación web desarrollada utilizando Next.js, ya que es la mejor forma de crear una SSR con React.js.
 
-Descripción:
+- Descripción:
 
 Este proyecto es una prueba técnica que simula la búsqueda de los míticos personajes de Marvel.
 
-Funcionalidades:
+- Funcionalidades:
 
 Buscar Personajes
 Añadir a favoritos los personajes
 Ver detalle de los personajes
 
-Requisitos:
+- Requisitos:
 
 Para ejecutar este proyecto localmente, necesitarás tener instalado:
 
@@ -23,13 +23,13 @@ Instalación:
 
 Clona este repositorio en tu máquina local utilizando el siguiente comando:
 
-    git clone https://github.com/tuusuario/tuproyecto.git
+    git clone https://github.com/SasanAbbasiHernandez/zara-marvel-challengue-next-ts.git
 
 Navega a la carpeta del proyecto e instala las dependencias utilizando npm o yarn:
 
     npm install
 
-Uso:
+- Uso:
 
 Modo Desarrollo:
 
@@ -46,7 +46,7 @@ Modo Simulación Producción:
 
 Esto iniciará el servidor de Next.js y podrás acceder a la aplicación en tu navegador visitando http://localhost:3000.
 
-Información RELEVANTE:
+- Información RELEVANTE:
 
 Estructura del proyecto: dividido en diferentes carpetas con la finalidad de que el proyecto sea escalable.
 
@@ -70,7 +70,7 @@ App: contiene la raíz de la aplicación que muestra a través de los layouts el
 
 Api: contiene todas las funciones propias de llamada a la API de Marvel.
 
-Palabras finales:
+- Palabras finales:
 
 La verdad es que me he divertido mucho haciendo este proyecto, le he dedicado muchas horas y me gustaría recibir feedback del mismo, sobre todo lo negativo.
 
