@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Proyecto ZARA CHALLENGE MARVEL con Next.js y TypeScript
 
-## Getting Started
+¡Bienvenido/a!
 
-First, run the development server:
+Este proyecto es una aplicación web desarrollada utilizando Next.js, ya que es la mejor forma de crear una SSR con React.js.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Descripción:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+    Este proyecto es una prueba técnica que simula la búsqueda de los míticos personajes de Marvel.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Funcionalidades:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+    Buscar Personajes
+    Añadir a favoritos los personajes
+    Ver detalle de los personajes
 
-## Learn More
+Requisitos:
 
-To learn more about Next.js, take a look at the following resources:
+    Para ejecutar este proyecto localmente, necesitarás tener instalado:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+        Node.js
+        Instalación:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+    Clona este repositorio en tu máquina local utilizando el siguiente comando:
 
-## Deploy on Vercel
+        bash
+        Copy code
+        git clone https://github.com/tuusuario/tuproyecto.git
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    Navega a la carpeta del proyecto e instala las dependencias utilizando npm o yarn:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+        Copy code
+        npm install
+
+Uso:
+
+    Modo Desarrollo:
+
+        Una vez que hayas instalado todas las dependencias, puedes ejecutar el proyecto localmente utilizando el siguiente comando:
+
+        arduino
+        Copy code
+        npm run dev
+        Esto iniciará el servidor de desarrollo de Next.js y podrás acceder a la aplicación en tu navegador visitando http://localhost:3000.
+
+    Modo Simulación Producción:
+
+        arduino
+        Copy code
+        npm run build
+        npm run start
+        Esto iniciará el servidor de Next.js y podrás acceder a la aplicación en tu navegador visitando http://localhost:3000.
+
+Información RELEVANTE:
+
+    Estructura del proyecto: dividido en diferentes carpetas con la finalidad de que el proyecto sea escalable.
+
+    Linters y Formatters: Utilizo Prettier para formatear el código con los comandos "npm run format" y "npm run format:fix" y en cuanto a los linters utilizo Eslint propia de Next.js.
+
+    Estilos: Se utiliza Sass para los estilos globales en la carpeta src/styles la cual tiene los colores y el responsive parametrizados para que los scss de las vistas y componentes puedan reutilizarlos.
+
+    Se utiliza styled-components para la creación de componentes animados que se reutilizan por toda la aplicación.
+
+    Interfaces: conjunto de interfaces para la correcta utilización de TypeScript.
+
+    Hooks: El primero (UseData) es un hook que nos ayuda a la recolección de datos del Contexto de manera más simple, el segundo (useSearchInputState) ayuda a saber cuándo se ha dejado de escribir en un input y lanzar una acción.
+
+    Context: Era obligatorio utilizar Context para la manipulación del estado, por lo tanto creé las funciones y estados pertinentes para la correcta funcionalidad de la aplicación.
+
+    Components: Conjunto de componentes para cada una de las vistas y header, además contiene la lista de componentes animados.
+
+    Assets: conjunto de assets que se utilizan por la aplicación, se dividen por vistas y componentes.
+
+    App: contiene la raíz de la aplicación que muestra a través de los layouts el header y cada una de las vistas, siendo 'characters' la principal y 'character' una vista especial que se autogenera en función del parámetro 'id' de la URL, autogenerando páginas estáticas una vez las visitas por primera vez.
+
+    Api: contiene todas las funciones propias de llamada a la API de Marvel.
+
+Palabras finales:
+
+    La verdad es que me he divertido mucho haciendo este proyecto, le he dedicado muchas horas y me gustaría recibir feedback del mismo, sobre todo lo negativo.
+
+    Un saludo,
+    Sasan.

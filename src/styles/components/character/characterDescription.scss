@@ -1,0 +1,67 @@
+@use '../../colors.scss' as c;
+
+@import '../../responsiveMixing.scss';
+
+.character-description-component {
+  width: 100%;
+  background-color: c.$black;
+  clip-path: polygon(100% 0%, 100% 92%, 98% 100%, 0 100%, 0 0);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  @include mobile {
+    clip-path: polygon(100% 0%, 100% 96%, 95% 100%, 0 100%, 0 0);
+    flex-direction: column;
+  }
+
+  .character-description-image {
+    width: 320px;
+    height: 320px;
+
+    @include mobile {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .character-description-wrapper {
+    width: 560px;
+    color: c.$white;
+    margin: 0px 40px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include mobile {
+      margin: 0px;
+      width: calc(100% - 32px);
+      height: 210px;
+      padding: 0px 16px;
+    }
+
+    .flex-space-between {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+
+      .character-description-name {
+        font-size: 40px;
+        font-weight: bold;
+        text-transform: uppercase;
+
+        @include mobile {
+          font-size: 32px;
+        }
+      }
+
+      .character-description-description {
+        font-size: 16px;
+      }
+    }
+  }
+}

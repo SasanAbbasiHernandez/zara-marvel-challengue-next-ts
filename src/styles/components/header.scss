@@ -1,0 +1,35 @@
+@use '../colors.scss' as c;
+
+@import '../responsiveMixing.scss';
+
+header {
+  width: calc(100% - 96px);
+  height: 84px;
+  padding: 0px 48px;
+  background-color: c.$black;
+  border-bottom: 1px solid c.$dark-grey;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .header-favorites {
+    width: 42px;
+    background-color: c.$black;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  span {
+    color: c.$white;
+    font-size: 16px;
+  }
+
+  @include mobile {
+    width: calc(100% - 32px);
+    padding: 0px 16px;
+  }
+}

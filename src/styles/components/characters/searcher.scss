@@ -1,0 +1,48 @@
+@use '../../colors.scss' as c;
+
+@import '../../responsiveMixing.scss';
+
+.search-section {
+  max-height: 60px;
+  flex: 1;
+  margin-bottom: 20px;
+  margin-top: 60px;
+  width: calc(100% - 96px);
+
+  @include mobile {
+    width: calc(100% - 32px);
+  }
+
+  .favorite-title {
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  label {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding-bottom: 8px;
+    border-bottom: 1px solid c.$black;
+    margin-bottom: 12px;
+
+    input {
+      margin-left: 10px;
+      border: none;
+      outline: none;
+      font-size: 16px;
+    }
+
+    input::placeholder {
+      color: c.$grey;
+    }
+  }
+
+  span {
+    font-size: 12px;
+  }
+}
+
+.fav-maxh {
+  max-height: 140px;
+}

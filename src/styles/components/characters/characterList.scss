@@ -1,0 +1,23 @@
+@import '../../responsiveMixing.scss';
+
+.character-list-section {
+  width: calc(100% - 96px);
+  overflow-y: auto;
+  white-space: nowrap;
+
+  @include mobile {
+    width: calc(100% - 32px);
+  }
+}
+
+.character-list-section::-webkit-scrollbar {
+  width: 0px;
+}
+
+.character-list-section::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+.character-list-section::-webkit-scrollbar-track {
+  background: transparent;
+}
